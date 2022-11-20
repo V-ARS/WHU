@@ -29,7 +29,7 @@ DiscordRequest json = new("Hello World!", "Webhook Utility", "https://cdn.discor
 
 const string url = "https://discord.com/api/webhooks/1043861413707395094/AzkGAQDnosm3q1JHCzFdLsw4RMF8y1smlSiOec9dMgdOdmXX3N94bv3QTo1KkzR1qNYf";
 
-string inputJson = JsonSerializer.Serialize(json, Json.SnakeCase);
-using StringContent content = new(inputJson, Encoding.UTF8, "application/json");
+string serialized = JsonSerializer.Serialize(json, Json.SnakeCase);
+using StringContent content = new(serialized, Encoding.UTF8, "application/json");
 
 await Client.PostAsync(url, content);
