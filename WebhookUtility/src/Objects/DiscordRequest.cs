@@ -13,7 +13,7 @@ public record DiscordRequest
     [Optional] string Payload_Json,
     [Optional] int Flags,
     [Optional] string Thread_Name,
-    [Optional] DiscordAM AllowedMentions,
+    [Optional] DiscordAM Allowed_Mentions,
     [Optional] DiscordComponents Components,
     [Optional] DiscordAttachment[] Attachments
 );
