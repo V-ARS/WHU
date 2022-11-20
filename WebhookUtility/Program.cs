@@ -7,20 +7,20 @@ using HttpClient Client = new();
 
 DiscordEmbed[] embed = new[]
 {
-    new DiscordEmbed()
+    new DiscordEmbed
     {
         Title = "Title",
         Description = "Description",
         Color = 16711680,
-        Image = new()
+        Image = new EmbedImage
         {
             Url = "https://cdn.discordapp.com/attachments/679791684548296735/1043816245427965962/image.png"
         },
-        Author = new()
+        Author = new EmbedAuthor
         {
             Name = "Author"
         },
-        Footer = new()
+        Footer = new EmbedFooter
         {
             Text = "Footer"
         }
